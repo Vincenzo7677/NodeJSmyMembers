@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method="POST", action="/members/add")
+     #form-group
+        label Name
+        input.form-control(name="name", type="text")
+     #form-group
+        label Adress
+        input.form-control(name="address", type="text")
+     #form-group
+        label Birthday
+        input.form-control(name="birthday", type="text")
+     #form-group
+        label Status
+        input.form-control(name="status", type="text")
+     #form-group
+        label Body
+        textarea.form-control(name="body")
+     #form-group
+     br
+     input.btn.btn-primary(type="submit", value="Submit")

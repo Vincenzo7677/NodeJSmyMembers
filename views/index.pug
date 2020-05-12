@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 #{title}
+    ul.list-group
+        each member, i in members
+            li.list-group-item
+             a(href="members/" + member._id)= member.name
+    

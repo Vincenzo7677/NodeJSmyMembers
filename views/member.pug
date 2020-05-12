@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= member.name
+    h5= member.adress
+    h5= member.birthday
+    h5= member.status
+    p= member.body
+    br 
+    hr
+    a.btn.btn-primary(href="/members/edit/" + member._id) Edit
+    a.btn.btn-danger.delete-member(href="#",data-id=member._id ) Delete

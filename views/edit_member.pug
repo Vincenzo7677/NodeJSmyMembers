@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method="POST", action="/members/edit/" + member._id)
+     #form-group
+        label Name:
+        input.form-control(name="name", type="text",value= member.name)
+     #form-group
+        label Address:
+        input.form-control(name="address", type="text",value= member.address)
+     #form-group
+        label Birthday:
+        input.form-control(name="birthday", type="text",value= member.birthday)
+     #form-group
+        label Status:
+        input.form-control(name="status", type="text",value= member.status)
+     #form-group
+        label Body:
+        textarea.form-control(name="body")= member.body
+     br
+     input.btn.btn-primary(type="submit", value="Submit")

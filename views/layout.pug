@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(rel='stylesheet' href='/bootstrap/dist/css/bootstrap.css')
+        title Hello Member
+body
+  .container 
+      nav.navbar.navbar-expand-lg.navbar-light.bg-dark
+        a.navbar-brand.text-white(href='/') Dojo
+            #navbarNavAltMarkup.collapse.navbar-collapse
+            .navbar-nav
+            span.sr-only (current)
+            a.nav-item.nav-link.text-white(href='/') Members
+            a.nav-item.nav-link.text-white(href='/members/add') Add members
+
+      block content
+       br
+      hr
+      footer
+        p &copy Vincenzo Schiavone
+
+script(src='/jquery/dist/jquery.js')
+script(src='/dist/js/bootstrap.js')
+script(src='/js/main.js')
+
